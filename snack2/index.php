@@ -7,6 +7,8 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
   $nome = $_GET['name'];
   $eta = $_GET['age'];
 
+  // posso utilizzare anche il strpos
+
   if(filter_var($email, FILTER_VALIDATE_EMAIL) &&
   filter_var($eta, FILTER_VALIDATE_INT) && (strlen($nome) > 3)){
     echo("Accesso riuscito");
